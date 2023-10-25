@@ -43,6 +43,7 @@ const Calculadora = () => {
     try {
       let resultado = ''
 
+      
       if (data.operacion.includes('%')) {
         const valores = data.operacion.split('%')
         resultado = eval(`${valores[1]}*(${valores[0]}/100)`)
